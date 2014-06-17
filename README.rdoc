@@ -1,0 +1,12 @@
+Life Tracker
+
+This life tracker application uses Rails scaffolding.
+This application lets you add, edit, and update schools you've
+attended and life events you have had.
+
+You will get and error if you don't enter something in for the Schools name,
+beginning year, and ending year. Schools' beginning year cannot be greater than their ending year.
+
+Life events have a title and date, that they happened.
+The description of the event is limited to 140 characters.
+Bonus: Create a new controller called HomeController that shows one view on the root of the site and links to your schools and life events.
