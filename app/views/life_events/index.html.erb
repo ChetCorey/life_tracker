@@ -1,8 +1,10 @@
-<h1>Listing life_events</h1>
+<body>
 
+<h1>Life Events</h1>
 <table>
   <thead>
     <tr>
+      <th>User name</th>
       <th>Title</th>
       <th>Date</th>
       <th>Description</th>
@@ -13,6 +15,7 @@
   <tbody>
     <% @life_events.each do |life_event| %>
       <tr>
+        <td><%= life_event.user.merg %></td>
         <td><%= life_event.title %></td>
         <td><%= life_event.date %></td>
         <td><%= life_event.description %></td>
@@ -27,3 +30,4 @@
 <br>
 
 <%= link_to 'New Life event', new_life_event_path %>
+</body>

@@ -1,8 +1,13 @@
+<body>
+
+
+
 <h1>Listing schools</h1>
 
 <table>
   <thead>
     <tr>
+      <th>User name</th>
       <th>School name</th>
       <th>Beginning year</th>
       <th>Ending year</th>
@@ -13,6 +18,7 @@
   <tbody>
     <% @schools.each do |school| %>
       <tr>
+        <td><%= school.user.merg %></td>
         <td><%= school.school_name %></td>
         <td><%= school.beginning_year %></td>
         <td><%= school.ending_year %></td>
@@ -27,3 +33,4 @@
 <br>
 
 <%= link_to 'New School', new_school_path %>
+</body>
